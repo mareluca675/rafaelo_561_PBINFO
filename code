@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int s, n, a, i, imaxi, maxi;
+
+int main()
+{
+    cin >> s >> n;
+    
+    for(i = 1; i <= n; i ++)
+    {
+        cin >> a;
+        
+        if(s / a > maxi)
+        {
+            maxi = s / a;
+            imaxi = i;
+        }
+    }
+    
+    cout << maxi << " " << imaxi;
+
+    return 0;
+}
